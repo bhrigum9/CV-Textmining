@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- File business object -->
+   <bean id="fileBo" class="com.epita.text.mining.bo.impl.FileBoImpl" >
+   		<property name="fileBo" ref="fileBo" />
+   </bean>
+ 
+   <!-- File Data Access Object -->
+   <bean id="fIleDao" class="com.epita.text.mining.dao.impl.FileDaoImpl" >
+   		<property name="sessionFactory" ref="sessionFactory"></property>
+   </bean>
+   
+</beans>
